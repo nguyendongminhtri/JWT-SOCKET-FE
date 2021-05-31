@@ -1,0 +1,8 @@
+<br><br><br><p>user-account works!</p>
+<form #f="ngForm" (ngSubmit)="f.form.valid&&chatSubMit()">
+    <mat-form-field>
+        <input matInput name="content" [(ngModel)]="form.content">
+    </mat-form-field>
+    <button type="submit">Create</button>
+</form>
+
